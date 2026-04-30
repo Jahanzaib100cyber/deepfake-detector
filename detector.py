@@ -37,7 +37,7 @@ def predict_image(image: Image.Image) -> dict:
     """
     model, processor = load_model()
 
-    # Preprocess: resize to 224x224, normalize using ViT standard values
+    # Preprocess: resize to 224x224,normalize using ViT standard values
     inputs = processor(images=image, return_tensors="pt")
     inputs = {key: val.to(DEVICE) for key, val in inputs.items()}
 

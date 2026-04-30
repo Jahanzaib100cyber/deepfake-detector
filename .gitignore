@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+venv/
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+.cache/
+*.bin
+*.pt
+*.pth
+*.safetensors
